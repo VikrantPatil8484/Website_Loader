@@ -1,0 +1,36 @@
+#loader{
+    width:100px;
+    height:100px;
+    border:10px solid white;
+    border-radius:50%;
+    border-top:10px solid blue;
+    animation:spin 3s linear infinite;
+    margin:0px auto;
+    margin-top:20%;
+   
+}
+#mydiv{
+    display:none;
+    text-align:center;
+    /* margin-top:20%; */
+    color:forestgreen;
+    /* text-shadow: 0 0 80px rgba(192,219,255 / 75%), 0 0 32px rgb(65,120,255 / 24%); making gradient text  */
+}
+.container{
+    animation-name:ani;
+    animation-duration:6s;
+    position:relative ;
+}
+@keyframes spin{
+    0%{transform:rotate(0deg);}
+    25%{transform:rotate(360deg);}
+    50%{transform:rotate(-0deg);}
+    100%{transform:rotate(-360deg);}
+}
+@keyframes ani{
+    from{bottom:-200px;}
+    to{bottom:0px;}
+}
+/* .text-glow{
+    text-shadow: 0 0 80px rgba(192,219,255 / 75%), 0 0 32px rgb(65,120,255 / 24%);  */
+
